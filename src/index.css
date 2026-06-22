@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* Enable class-based dark mode selector (e.g. dark:bg-slate-900 triggers when parent has class .dark) */
-@variant dark (&:where(.dark, .dark *));
+@custom-variant dark (&:where(.dark, .dark *));
 
 @media print {
   /* Hide the header, form panel, toast notifications, and buttons */
@@ -16,7 +16,7 @@
   /* Reset layout structure for printing */
   html, body {
     background-color: white !important;
-    color: #1e293b !important;
+    color: black !important;
     margin: 0 !important;
     padding: 0 !important;
     width: 210mm !important;
@@ -46,7 +46,7 @@
     box-shadow: none !important;
     border-radius: 0 !important;
     background: white !important;
-    color: #1e293b !important;
+    color: black !important;
     box-sizing: border-box !important;
     page-break-after: avoid;
   }
